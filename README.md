@@ -13,3 +13,10 @@
 At this point you should be able to find the `app-cordova_plugins.js` in the
 logs near the bottom. Looks like it stops dead because it never actually loads
 any of the plugins.
+
+Similarly, this can be reproduced in the simulator. You will still do a
+`meteor run ios-device` and hop into xcode, but instead of choosing a physical
+phone as Destination, choose a simulator model (I tested with iPhone 4s, but it
+is unlikely that the model makes a difference here). Then all steps will apply
+except that you won't get the security error from step 6 (thus no need to tap
+"Trust" etc).
